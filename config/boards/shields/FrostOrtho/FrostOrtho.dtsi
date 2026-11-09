@@ -109,3 +109,8 @@
         reg = <0>;
     };
 };
+
+/* Zephyr 4.1 ではNFCピン(P0.09/P0.10)のGPIO化をDTで指定する（CONFIG_NFCT_PINS_AS_GPIOS は非推奨で効かない） */
+&uicr {
+    nfct-pins-as-gpios;
+};

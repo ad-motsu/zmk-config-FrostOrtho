@@ -5,10 +5,13 @@
 > このフォークは ZMK 0.4（cormoran ZMK + Zephyr 4.1）に移行し、DYA Studio でのランタイムコンボおよびランタイムマクロの作成・保存に対応しています。
 > 
 > - **書き込むファームウェアファイル**:
->   - 右手側（Central）: `FrostOrtho_R-xiao_ble-zmk.uf2`
->   - 左手側（Peripheral）: `FrostOrtho_L-xiao_ble-zmk.uf2`
-> - **移行時の注意**:
->   - 新しいファームウェアを書き込む前に、必ず既存の DYA Studio 設定を JSON 形式でエクスポート（バックアップ）してください。
+>   - 右手側（Central）: `FrostOrtho_R-xiao_ble__zmk-zmk.uf2`
+>   - 左手側（Peripheral）: `FrostOrtho_L-xiao_ble__zmk-zmk.uf2`
+> - **移行手順（旧ファームウェアから書き換える場合）**:
+>   1. DYA Studio の設定を JSON 形式でエクスポート（バックアップ）する。
+>   2. 左右それぞれに `settings_reset-xiao_ble__zmk-zmk.uf2` を書き込む（キー割り当ての内部IDの方式が変わるため、旧ファームで保存したキー変更は新ファームで正しく読めない。ペアリングも消える）。
+>   3. 左右に上記のファームウェアを書き込み、PCとペアリングし直す。
+>   4. DYA Studio でキーマップを設定し直す（または JSON から復元する）。トラックボールの速度・向き・AML・スクロールの調整値も保存先が変わったため初期値に戻るので、設定し直して保存し、再起動後も残っているか確認する。
 
 FrostOrthoをご購入いただきありがとうございます！  
 ガイドをご一読いただき、使用を開始してください。気に入っていただけましたら、X等で「#FrostOrtho」で宣伝いただけると大喜びします。  
