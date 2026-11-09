@@ -6,6 +6,7 @@
 #include <dt-bindings/zmk/runtime_input_processor.h>
 #include <zephyr/dt-bindings/dt-util.h>
 #include <behaviors/battery_history_request.dtsi>
+#include <behaviors/runtime_macro.dtsi>
 #include <mouse-gesture.dtsi>
 
 &default_transform {

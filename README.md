@@ -1,4 +1,15 @@
 # FrostOrtho
+
+> [!IMPORTANT]
+> **ZMK 0.4 (cormoran) / DYA Studio ランタイムコンボ・マクロ対応について**  
+> このフォークは ZMK 0.4（cormoran ZMK + Zephyr 4.1）に移行し、DYA Studio でのランタイムコンボおよびランタイムマクロの作成・保存に対応しています。
+> 
+> - **書き込むファームウェアファイル**:
+>   - 右手側（Central）: `FrostOrtho_R-xiao_ble-zmk.uf2`
+>   - 左手側（Peripheral）: `FrostOrtho_L-xiao_ble-zmk.uf2`
+> - **移行時の注意**:
+>   - 新しいファームウェアを書き込む前に、必ず既存の DYA Studio 設定を JSON 形式でエクスポート（バックアップ）してください。
+
 FrostOrthoをご購入いただきありがとうございます！  
 ガイドをご一読いただき、使用を開始してください。気に入っていただけましたら、X等で「#FrostOrtho」で宣伝いただけると大喜びします。  
 
